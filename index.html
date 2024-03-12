@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculadora de propinas</title>
+</head>
+<body>
+    <section>
+        <div class="titulo">
+            <h1>Calculadora de propinas</h1>
+        </div>
+        <div class="bloque2">
+            <div class="bloque2_1">                      
+                <div>
+                    <input id="idprefactura" type="number" placeholder="Añadir total factura">
+                </div>
+                <div>
+                    <h3>Añadir propina</h3>
+                </div>
+                <div class="bloquespropina">
+                    <div class="botones">
+                        <button onclick="function5()">5%</button>
+                    </div>
+                    <div class="botones">
+                        <button onclick="function10()">10%</button>
+                    </div>
+                    <div class="botones">
+                        <button onclick="function15()">15%</button>
+                    </div>
+                </div>
+                <div>
+                    <p id="idpersonalizado" class="personalizado">% personalizado</p>
+                </div>
+            </div>
+            <div class="bloque2_2">
+
+                <div>
+                    <h3 class="propinas">Total con propinas</h3>
+                </div>
+                <div class="precio">
+                    <p>$ </p>
+                    <p id="idresultado" >00000000</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button onclick="calculando()" class="calcular">Calcular</button>
+        </div>
+
+
+    </section>
+</body>
+
+<script src="./codigo.js"></script>
+</html>
